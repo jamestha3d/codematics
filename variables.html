@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="homepage.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body style="font-size: +2;">
+    <div class="container">
+    <!-- NAV BAR-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="homepage.html">Codematics</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Chapters
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gettingstarted.htmlxc">Getting Started</a></li>
+                <li><a class="dropdown-item" href="#">Variables</a></li>
+                <li><a class="dropdown-item" href="#">Functions</a></li>
+                <li><a class="dropdown-item" href="#">Loops</a></li>
+                <li><a class="dropdown-item" href="#">Classes</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <hr> <br> <br>
+
+    <!-- CODE GOES HERE-->
+
+    <div class="container">
+
+
+    <h1 id="variables"> Data Types </h1>
+
+    <div class="intro_text">
+    <p>When writing code to give our computer some instructions, we have to give it some data as input. this input can be of different <strong>types</strong>. Let us look at some <b>data types</b> below </p>
+
+    <h3> INTEGER </h3>
+    <p> These are whole numbers, negative or positive such as 1 or 2 or 50 or -200, etc. Integer is usually written as <a class="highlight">int</a></p>
+
+    <h3> FLOAT </h3>
+    <p> This is any number with a decimal point in it. for example, 0.7 or 634.81. Float is usually written as <a class="highlight">float</a></p>
+
+    <h3> CHAR</h3>
+    <p> Short for character, This is any single printable character on your keyboard, for example A or B or c or ; or \ etc. NOTE: <i> chars are usually enclosed in single quotes, such as 'A'. Char is usually written as <a class="highlight">char</a> </i> </p>
+
+    <h3> STRING</h3>
+    <p> This is a collection of chars, Basically any text on your computer is a string. Examples of strings are "Hello", "Hi", "How are you doing today" or "#$@!?" are all strings. Notice that they are enclosed in quotes.</p>
+    <p> NOTE: <i> For most programming languages, you can use either single quotes or double quotes for either strings or chars, but a common practice is to use single quotes for chars and double quotes for strings </i>. String is usually written as <a class="highlight">str</a></p>
+
+    <h3> BOOLEAN</h3>
+    <p> This is a value of either True or False. Basically just yes or no. Boolean is usually written as <a class="highlight">bool</a></p>
+
+    <h3> NULL</h3>
+    <p> This usually represents an invalid or non existent item. for example if you try to access a deleted item, your compiler will give you a null response. Null is a very powerful concept in programming which allows us to know when something has gone wrong in our code. Null is usually written as <a class="highlight">null</a> </p>
+
+    <p> NOTE!: Other Data Types worth mentioning such as
+        <ul>
+        <li>DOUBLE which is a float but allows higher values than Float, basically a bigger Float</li>
+        <li>LONG which is an integer but allows higher values than integer, Basically a bigger Integer </li>
+
+
+        </ul>
+        </p>
+
+    <p> These data types which we have seen so far are known as <strong>Primitive data types</strong> </p>
+    </div>
+
+
+    <h1> Variables</h1>
+    <p> A variable is a container used to store any of these data types which we have talked about so far. for example, if i have an integer like <mark>15</mark>, i can store it in a variable called <mark>x</mark>.
+        Different programming languages have their way of doing this, but generally this will look something like this <mark>age = 15</mark>. If i have the string "john", i can also store this in a variable called <mark>name</mark> and it will look something like this <mark> name = "john"</mark>.
+        <i> A variable is a container that allows us to store our data. all data types can be stored in a variable. this will generally look like <mark> variable_name = data </mark>. The technical way to say this is that we <b>assign</b> the <b>value</b> of the data to the variable_name. so for <mark> age = 15</mark> we say that we assigned the value of 15 to a variable called age. Meanwhile this whole expression where we assign a value to a variable is known as a declaration. </i>
+        <p> Once declared, variables can be <mark>updated</mark> in much the same way we declared them. so if we no longer want x to be 15, we can update it to 16 by writing <mark> x = 16</mark>,</p>
+        </p>
+    <p> in some programming languages we have to specify what type of data we are storing in the variable at the time of declaration, by writing the data type first. <i>e.g in C programing language, if we want to store the char 'A' in a variable called alphabet. we would do <mark> char alphabet = 'A'</mark>. This just tells the compiler that alphabet is a variable that stores only chars. More recent programming languages, like javascript or python do not need this specification, and indeed variables can be updated to different types in javascript/python. meaning that a variable can hold a char, and then we can easily update it to a string or a float. For this reason, In JavaScript, our language of choice, we do not have to specify the type of data the variable will hold when declaring the variable(the variable doesn't hold only 1 type of data it can change). We can just do <mark>alphabet = 'A'</mark>. However JavaScript has 3 optional specifiers that we can put before the variable name. let us look at these</i></p>
+
+    <h5> Let</h5>
+    <p> We can specify a variable with the keyword <mark>let</mark> as follows: <a class="code"> let age = 15</a>. It basically just creates a <b>variable</b> called <b>age</b> and <b>assigns</b> the <b>value</b> 15 to it.This is the default option that the computer chooses in the background if we do not specify anything and just write <a class="code">age = 15</a> </p>
+
+    <h5> Const</h5>
+    <p>Short for constant, we can put <mark>const</mark> in front of a variable, at the time of declaration. example <mark> const age = 15. This makes it impossible for us to change/update age to 16, for example. if we tried to say later in our code <mark>age = 16</mark>. it would not work and we will get an error. This can be helpful when we are writing programs and we do not need certain variables to change. for example, if we create a variable to store the value of pi. we would not want it to mistakenly change somewhere in our code, and if that is attempted we should get an error and fix the problem</mark></p>
+    <h5> Var</h5>
+    Var is similar in function to let, except that it makes the variable have a global scope instead of local scope. we talk more about this here in <a href="/scopes"> scopes</a>.
+    <p></p>
+    <h2> NON PRIMITIVE DATA TYPES</h2>
+
+    <h3> ARRAYS </h3>
+    <p> An array is a </p>
+    <div>
+
+    </div>
+    </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
